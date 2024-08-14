@@ -1,3 +1,10 @@
+//   dynamically ====
+//  * var
+//  * let
+//  * const
+
+
+
 var a; // declare
 a=10;  // initialise
 a="hi"; // re- initialise
