@@ -1,17 +1,17 @@
-let lowerBound = -0.48;
-let upperBound = 4;
+let lB = -0.48;
+let uB = 4;
 
-let leastPositiveInteger = null;
+let leastPI = null;
 
-for (let i = 1; i <= upperBound; i++) {
-    if (i > lowerBound) {
-        leastPositiveInteger = i;
+for (let i = 0; i <= uB; i++) {
+    if (i > lB) {
+        leastPI = i;
         break;
     }
 }
 
-if (leastPositiveInteger === null) {
-    console.log('No positive integers in the given range.');
+if (leastPI === null) {
+    console.log('no positive in it');
 } else {
-    console.log('The least positive integer in the range is:', leastPositiveInteger);
+    console.log('the least positive integer in this range is:', leastPI);
 }

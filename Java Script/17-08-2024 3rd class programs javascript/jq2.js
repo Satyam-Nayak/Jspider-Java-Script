@@ -5,4 +5,4 @@ for (let i = 0; i <=99; i++) {
     }
 }
 
-console.log('Total even numbers from 0 to 99:', count);
+console.log('Total even number from 0 to 99 are : ', count);

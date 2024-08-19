@@ -1,4 +1,4 @@
-function getRateOfInterest(deposit) {
+function roe(deposit) {
     let rate;
 
     switch (true) {
@@ -12,11 +12,11 @@ function getRateOfInterest(deposit) {
             rate = 12;
             break;
         default:
-            return 'Invalid input';
+            return 'invalid input';
     }
 
-    return `Rate of interest for deposit of ${deposit} is ${rate}%`;
+    return 'Rate of interest for deposit of ' + deposit + ' is ' + rate + '%';
 }
 
 let depositAmount = 1200000; 
-console.log(getRateOfInterest(depositAmount));
+console.log(roe(depositAmount));
