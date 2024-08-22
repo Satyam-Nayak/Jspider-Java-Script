@@ -1,0 +1,51 @@
+Function:
+* Named block of instructions which is used to perform a specific task.
+* function gets executed  only when ity is called .
+* the main advantage of function is , we can achive code reuseabvility.
+* MAIN PURPOSE: code reuseability ,which means code once declared can be called anywhere.
+
+Note.
+
+*Syntax to create a function.
+*Generally we can create a function in 2 ways:
+1. using function decalration statement(function statement)
+2.function expression.
+
+
+1> FUNCTION DECLARATION STATEMENT:
+
+finction indentifier(parameter1,parameter2,.....)
+{
+    statement
+}
+
+Note:
+
+* name of function is variable which holds the referance of function object.
+* createing a function using function statement supports function
+
+*****hoisting.therefore we can also use a function before function decalration
+
+* ex:
+   console.log('start');
+   console.log(test);
+   function test()
+   {
+    console.log("hello")
+   }
+   console.log("end")
+
+
+*When we try to log the function name the entire function defination is printed.
+
+*To call a function:
+*function_name('argument list'); -----function calling statement;
+
+PARAMETERS:
+-----------
+* the variables declared in the function defination/decalration is known as parameter.
+* the parameters have local scope.Those can be used inside the function body
+* PARAMETERS are used to hold the values passed by a calling a function.
+
+EX:
+function sum(a,b)
