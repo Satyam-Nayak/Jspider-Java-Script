@@ -49,3 +49,16 @@ PARAMETERS:
 
 EX:
 function sum(a,b)
+{
+    console.log(a+b);
+}
+
+here a&b are variables local to the function sum.
+
+ARGUMENTS:
+*the values passed in the method call statement is known as argument.
+*An argument can be a literal,variable or an expression which results a value
+
+Ex1: sum(10,20)-----10,20 are literal used as ARGUMENTS
+ex2: sum(-10+3,-20); //-27
+ex3: let a=20,b=30;
