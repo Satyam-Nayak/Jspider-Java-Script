@@ -21,14 +21,14 @@ let bool = arr1.includes('hi'); // which one present in the array is shown true
 let bool1 = arr1.includes(true,2); // which one present in the array is shown true
 console.log(bool1);
 
-let arr2 = [10,true,'hi',false,"hi","hi"];
+let arr2 = [10,true,false,'hi',"hi","hi"];
 console.log(arr2);
 
-let num = arr2.indexOf("hi",3);
-console.log(num);
+// let num = arr2.indexOf("hi",3);
+// console.log(num);
 
-let num1 = arr1.lastIndexOf("hi");
+let num1 = arr2.lastIndexOf("hi");
 console.log(num1);
 
-let bool3 = arr2. includes(true,2);
-console.log(bool3)
+// let bool3 = arr2. includes(true,2);
+// console.log(bool3)
