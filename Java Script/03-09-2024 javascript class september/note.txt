@@ -1,0 +1,173 @@
+// // // // // // Strings in javascript
+
+// // // // // // *Strings are the collection of primitive datatype  of charecters in
+// // // // // //  javascript that is written inside of "" or ''.
+// // // // // // *String are immutable in Javascript.
+// // // // // // *Strings have index position for each charecter in javascript.
+// // // // // // *Index Positions Starts from 0;
+
+// // // // // // String Inbuilt Methods
+
+// // // // // // *str.length is a special keyword that is used in javascript to find the total length of a String.
+
+// // // // // // console.log(str.length);
+
+// // // // // // * str.toUpperCase() : is a method that is used in javascript to return a new 
+// // // // // // string that converts all the cahrecters in to UpperCase.
+
+// // // // // // let newStr = str.toUpperCase();
+
+// // // // // // * str.toLowerCase() : is a method that is used in javascript to return a new string 
+// // // // // // that  converts all the cahrecters in to LowerCase.
+
+// // // // // // let newStr = str.toLowerCase();
+
+// // // // // // * str.split(" ") : is a method that is used in javascript to return a new string that 
+// // // // // // convert the array element to strings  by specifing the seperator.
+
+// // // // // // let newStr = str.split(" "); convert the arr to strings
+
+// // // // // // * str.replace("l"," t t ") : is a method that is used in javascript to return a new 
+// // // // // // string that replaces the first occurence of charecter.
+
+// // // // // // let newStr = str.replace("l"," t t ");
+
+// // // // // // * str.replaceAll("a"," mon fri sat sun ") : is a method that is used in javascript to 
+// // // // // // return a new string that replaces the all the occurence of charecters.
+
+// // // // // // let newStr = str.replaceAll("a"," mon fri sat sun ");
+
+// // // // // // * str.charAt(0) :  is a method that is used in javascript to return a new string that 
+// // // // // // specifies the Charecter at that index position.
+
+// // // // // // let newStr = str.charAt(0);
+
+// // // // // // * str.indexOf("a",5) : is a method that is used in javascript to return a new string that
+// // // // // //  specifies the index position of a charecter from the starting index position. 
+// // // // // // let newStr = str.indexOf("a",5);
+
+// // // // // // * str.lastIndexOf("Z") : is a method that is used in javascript to return a new string that
+// // // // // //   specifies the index position of a charecter from the last index position. 
+
+// // // // // // let newStr = str.lastIndexOf("Z")
+
+
+===================================================================================
+===================================================================================
+
+// // // // // 1.Anonymous function : is a type of function that is used present without
+// // // // //  a function name.
+// // // // // *Anonymous function will not have any identifier or name to invoke it.
+// // // // // *To call an anonymous function we have two Ways in javascript.
+// // // // // eg :
+// // // // // function(a,b){
+// // // // //     return a+b;
+// // // // // } 
+
+// // // // // a)Immedeate Invoked Function (IIFE) 
+// // // // // *Immedeate Invoked Function is a function that is called immedeatly as 
+// // // // // soon as function is created .
+// // // // // *To call an immedeatly ivoked function we dont want a function name but we 
+// // // // // consider the whole 
+// // // // // function execution inside a block and we will call the empty function 
+// // // // // paranthesis as soon as the function is created. 
+
+// // // // // eg: 
+// // // // // (function(a,b){
+// // // // //     console.log(a+b);
+// // // // //     console.log("Welcome to Javascript");
+// // // // // })(10,20);
+
+
+// // // // // b).Function With Expression 
+// // // // // *Function With Expression is a type of function where we can 
+// // // // // give a identifier name or a expression name for a function.
+// // // // // *In function with expression we can store the function value into a normal variable.
+// // // // // *That variable name wich stores the function as a values will be invoked 
+// // // // // whenever function should be executed. 
+
+// // // // // eg :
+// // // // // let add = function(a,b){
+// // // // //     return a + b;
+// // // // // }
+// // // // // add()
+
+
+// // // // // 2.Callback function
+// // // // // *Callback function is a type of function that is 
+// // // // // passed as a argument for another function.
+// // // // // *Callback function will get automatically invoked 
+// // // // // when it is passed as a parameter for another function 
+// // // // // so call back function well work with the function name 
+// // // // // that is accepting that call back function as an argument. 
+
+// // // // // eg: 
+// // // // // console.log("Line number one executed");
+// // // // // setTimeout(()=>{
+// // // // //     console.log("Line number two executed")}
+// // // // //     ,4000)
+// // // // // console.log("Execution Was gone");
+
+// // // // // 3.Higher Order Function 
+// // // // // *Higher Order Function is a type of a
+// // // // //  function that accepts another function as an argument 
+// // // // //  and returns the function as a value.
+// // // // // *Higher Order function will invoke the call back function 
+// // // // // inside its function block and executes return the function as a value. 
+// // // // // eg: 
+// // // // // function add(a,b){
+// // // // //     return a + b;
+// // // // // }
+// // // // // function sub(d,e){
+// // // // //     return d-e;
+// // // // // }
+// // // // // function total(m,n,sub,add){
+// // // // //    return m*n-add-sub ; 
+// // // // // }
+// // // // // let res = total(10,20,sub(50,20),add(10,20));
+// // // // // console.log(res);
+
+// // // // // 4.First Order function
+// // // // // *The opposite of Higher Order function is First Order function.
+// // // // // *First Order function is a type of funtion in which user will not
+// // // // //  pass any another function as an arugument and the function will 
+// // // // //  not return any function as a value.
+// // // // // *A normal function without accepting any nested 
+// // // // // function can be considered as first order function.
+// // // // // eg:
+// // // // // function add(a,b){
+// // // // //     return a + b;
+// // // // //     console.log(a+b);
+// // // // // }
+// // // // // add(10,20)
+
+// // // // // 5.Arrow Function 
+// // // // // *Arrow Function is a type of function where user will use an
+// // // // //  "=>" symbol as a function instead of "function" keyword.
+// // // // // *Advantage of arrow function is it is morw efficient compared to normal function.
+// // // // // *And it is easier to invoke an arrow function inside a nested block and
+// // // // //  many places compared to normal function.
+// // // // // eg:
+// // // // // let add = (a,b) => {
+// // // // //     console.log(a+b);
+// // // // //     return a + b;
+// // // // // }
+// // // // // let c = add(12,23)
+
+
+// // // // // 6.Function with Constructor
+// // // // // *Constructor is a speacial type of a function that is 
+// // // // // used to initialize the properties of an object in javascript.
+// // // // // *Constructor use this keyword to diffentiate between the local
+// // // // // variables and global variables.
+// // // // // *Using constructor function we can create a Variable that can store all the 
+// // // // // properties of object in the form of key and value pair. 
+// // // // // eg:
+// // // // // function Emp(id,ename,sal,hired){
+// // // // //     http://this.id = id;
+// // // // //     this.ename = ename;
+// // // // //     this.sal = sal;
+// // // // //     this.hired = hired;
+// // // // // }
+
+// // // // // let e1 = new Emp(131,"Anuj",98999999,false);
