@@ -10,6 +10,8 @@ console.log(body);
 let image = document.createElement('img');
 console.log(image);
 image.src = "https://images.alphacoders.com/850/850903.png"
+image.style.width = "500px"
+image.style.height = "250px"
 
 let butt = document.createElement('button');
 console.log(butt);
