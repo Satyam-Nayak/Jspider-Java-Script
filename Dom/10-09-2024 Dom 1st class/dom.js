@@ -1,4 +1,4 @@
-let a1 = document.createElement("h1");
+let a1 = document.createElement("h1"); //createelements
 console.log(a1);
 a1.innerText = "Hello Guys........";
 a1.style.backgroundColor = "green"
