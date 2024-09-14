@@ -1,0 +1,14 @@
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((res)=>{
+    console.log(res);
+    res.json()
+    .then((message)=>{
+        console.log(message);
+    })
+    .catch((errMessage)=>{
+        console.log(errMessage);
+    })
+})
+.catch((err)=>{
+    console.log(err);
+})
