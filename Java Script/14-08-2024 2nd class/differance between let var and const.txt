@@ -1,0 +1,35 @@
+Here’s the explanation of `var`, `let`, and `const` in JavaScript with examples similar to your code:
+
+### 1. **`var`** (Dynamic Behavior)
+- You can **declare** a variable, **initialize** it, and then **re-initialize** and **re-declare** it with `var`.
+
+```javascript
+var a;        // declare
+a = 10;       // initialize
+a = "hi";     // re-initialize
+var a = true; // re-declare
+console.log("Value of the container is: " + a); // Output: true
+```
+
+### 2. **`let`** (Block Scoped)
+- You can **declare** and **initialize**, and then **re-initialize**, but you **cannot re-declare** a `let` variable in the same block.
+
+```javascript
+let b;      // declare
+b = 20;     // initialize
+b = 30;     // re-initialize
+// let b = "Hi"; // Error: cannot re-declare
+console.log("Value of the container: " + b); // Output: 30
+```
+
+### 3. **`const`** (Constant Value)
+- `const` must be **declared and initialized** at the same time. You cannot **re-initialize** or **re-declare** a `const` variable.
+
+```javascript
+const c = 100;     // declare and initialize
+// const c = 200;  // Error: cannot re-declare
+// c = true;      // Error: cannot re-initialize
+console.log("Value of the container: " + c); // Output: 100
+```
+
+This demonstrates the dynamic behavior of `var`, `let`, and `const` with examples you can use in interviews.
