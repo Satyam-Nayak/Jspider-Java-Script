@@ -33,3 +33,4 @@ console.log("Value of the container: " + c); // Output: 100
 ```
 
 This demonstrates the dynamic behavior of `var`, `let`, and `const` with examples you can use in interviews.
+
